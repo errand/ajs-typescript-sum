@@ -16,7 +16,10 @@ export default class Cart {
      * @returns {number}
      */
     getTotalCost(): number {
-        return this._items.reduce((a, b) => a + b.price, 0);
+        return this._items.reduce((
+            /** @type number */ a,
+            /** @type number */ b,
+        ) => a + b.price, 0);
     }
 
     /**
